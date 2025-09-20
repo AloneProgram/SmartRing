@@ -3,3 +3,5 @@ Pods/
 .DS_Store
 SmartRing.xcworkspace
 
+*.xcuserstate
+
