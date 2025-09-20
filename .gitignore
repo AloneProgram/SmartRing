@@ -1,7 +1,13 @@
 
 Pods/
 .DS_Store
+
 SmartRing.xcworkspace
 
+*.xcuserstate
+
+# Xcode user data
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
 *.xcuserstate
 
