@@ -11,6 +11,7 @@
 		211A30652E7D8181006783D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211A30642E7D8181006783D3 /* ContentView.swift */; };
 		211A30672E7D8188006783D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211A30662E7D8188006783D3 /* Assets.xcassets */; };
 		211A306B2E7D8188006783D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211A306A2E7D8188006783D3 /* Preview Assets.xcassets */; };
+		BCC2444BB7F303A7B0A8A5E7 /* Pods_SmartRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1C2F80F3731D2C951B5EDB /* Pods_SmartRing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		211A30662E7D8188006783D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211A30682E7D8188006783D3 /* SmartRing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartRing.entitlements; sourceTree = "<group>"; };
 		211A306A2E7D8188006783D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F66C4633491EDA95496742D /* Pods-SmartRing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRing.debug.xcconfig"; path = "Target Support Files/Pods-SmartRing/Pods-SmartRing.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1C2F80F3731D2C951B5EDB /* Pods_SmartRing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartRing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAFFB29D4BA9D9D9FB6E65E /* Pods-SmartRing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRing.release.xcconfig"; path = "Target Support Files/Pods-SmartRing/Pods-SmartRing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC2444BB7F303A7B0A8A5E7 /* Pods_SmartRing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				211A30612E7D8181006783D3 /* SmartRing */,
 				211A30602E7D8181006783D3 /* Products */,
+				AA1DF4F14D0537E44C487459 /* Pods */,
+				7C158785D23805ABAF03DF45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +76,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7C158785D23805ABAF03DF45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D1C2F80F3731D2C951B5EDB /* Pods_SmartRing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA1DF4F14D0537E44C487459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F66C4633491EDA95496742D /* Pods-SmartRing.debug.xcconfig */,
+				CFAFFB29D4BA9D9D9FB6E65E /* Pods-SmartRing.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 211A306E2E7D8188006783D3 /* Build configuration list for PBXNativeTarget "SmartRing" */;
 			buildPhases = (
+				9A32E30133E02D0BA8EC6919 /* [CP] Check Pods Manifest.lock */,
 				211A305B2E7D8181006783D3 /* Sources */,
 				211A305C2E7D8181006783D3 /* Frameworks */,
 				211A305D2E7D8181006783D3 /* Resources */,
+				73426F6E560B4FDAB040F9C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73426F6E560B4FDAB040F9C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartRing/Pods-SmartRing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartRing/Pods-SmartRing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartRing/Pods-SmartRing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A32E30133E02D0BA8EC6919 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartRing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		211A305B2E7D8181006783D3 /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		211A306F2E7D8188006783D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F66C4633491EDA95496742D /* Pods-SmartRing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		211A30702E7D8188006783D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAFFB29D4BA9D9D9FB6E65E /* Pods-SmartRing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
